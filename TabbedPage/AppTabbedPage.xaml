@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://schemas.microsoft.com/dotnet/2021/maui/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+            xmlns:local="clr-namespace:TabbedPageSample;assembly=TabbedPage"
+            xmlns:android="clr-namespace:Microsoft.Maui.Controls.PlatformConfiguration.AndroidSpecific;assembly=Microsoft.Maui.Controls"
+            android:TabbedPage.ToolbarPlacement="Top"
+            x:Class="TabbedPageSample.AppTabbedPage">
+
+    
+    <TabbedPage.Children>
+    <NavigationPage Title="One" IconImageSource="{StaticResource TabOne}">
+        <x:Arguments>
+            <local:MainPage Title="One" />
+        </x:Arguments>
+    </NavigationPage>
+    <NavigationPage Title="Jacobs Connect" IconImageSource="{StaticResource TabTwo}">
+        <x:Arguments>
+            <local:MainPage Title="Two" />
+        </x:Arguments>
+    </NavigationPage>
+    <NavigationPage Title="Three" IconImageSource="{StaticResource TabThree}">
+        <x:Arguments>
+            <local:MainPage Title="Three" />
+        </x:Arguments>
+    </NavigationPage>
+    <NavigationPage Title="Four" IconImageSource="{StaticResource TabFour}">
+        <x:Arguments>
+            <local:MainPage Title="Four" />
+        </x:Arguments>
+    </NavigationPage>
+
+     <NavigationPage Title="Five" IconImageSource="{StaticResource TabFour}">
+        <x:Arguments>
+            <local:MainPage Title="Five" />
+        </x:Arguments>
+    </NavigationPage>
+        </TabbedPage.Children>
+
+</TabbedPage>
